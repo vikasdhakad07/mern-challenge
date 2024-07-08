@@ -1,0 +1,24 @@
+{
+  "name": "mern-coding-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon index.js",
+    "client": "cd client && npm start"   
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.5",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^2.0.7"
+  }
+}
